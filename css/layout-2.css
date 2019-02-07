@@ -1,0 +1,29 @@
+#container{
+    background-color: coral;
+    width:960px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(3, max-content);
+    grip-gap: 1em;
+    
+    grid-template-areas:
+        "header header menu"
+        "psot blank login"
+        "main main main "
+        "footer footer footer"
+}
+
+#title{
+    grid-area:header ;
+    
+}
+
+#menu{
+    grid-area: menu;
+}
+
+#posts{
+    grid-area: main;
+}
