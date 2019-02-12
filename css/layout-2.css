@@ -6,24 +6,38 @@
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows:repeat(3, max-content);
-    grip-gap: 1em;
+    grid-gap: 1em;
     
     grid-template-areas:
-        "header header menu"
-        "psot blank login"
-        "main main main "
-        "footer footer footer"
+        "posts posts post"
+        "main main sign "
+        "header header login"
 }
 
 #title{
     grid-area:header ;
+    background-color:aqua; 
     
 }
 
 #menu{
-    grid-area: menu;
+    grid-area: main;
+    background-color:gold;
 }
 
 #posts{
-    grid-area: main;
+    grid-area: posts;
+    background-color:sienna;
+}
+#post{
+    grid-area: post;
+    background-color:khaki;
+}
+#login{
+    grid-area: login;
+    background-color:violet;
+}
+#sign-up{
+    grid-area: sign;
+    background-color:lightcoral;
 }
