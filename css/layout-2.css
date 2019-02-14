@@ -1,6 +1,6 @@
 #container{
     background-color: coral;
-    width:960px;
+    max-width:960px;
     margin-right: auto;
     margin-left: auto;
     display: grid;
