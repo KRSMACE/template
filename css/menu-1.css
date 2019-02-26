@@ -1,11 +1,15 @@
-#menu-list{
-    padding: 0;
-    list-style: none;
+#menu-list {
+  padding: 10px;
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+
 }
 
-#menu-list li{
-
+#menu-list li {
+    background-color: aqua;
+	margin-left: 1em;
+	flex:1;
+	text-align: center;
 }

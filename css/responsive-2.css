@@ -1,1 +1,73 @@
-@media(max-)
+
+/*Mobile devices*/
+
+@media (max-width: 400px) {
+    #container {
+        grid-template-column:
+        1fr;
+        background-color: darkgoldenrod;
+        
+    }
+    
+    #title, #login, #sign-up, #menu, #post, #posts{
+        grid-column:1;
+    }
+    
+    #title{
+       grid-row:1; 
+    }
+    
+     #login{
+       grid-row:3; 
+    }
+    
+    #sign-up{
+       grid-row:2;
+    }
+    
+     #menu{
+       grid-row:4; 
+    }
+    
+     #post{
+       grid-row:5;
+    }
+    
+     #posts{
+       grid-row:6; 
+    }
+}
+
+/*Tablet*/
+@media (min-width: 401px) and 
+    (max-width: 800px){
+        #container{
+            width: 100%;
+            background-color: crimson
+        }
+        
+        #post {
+            grid-column:3/ span 1;
+            grid-row:1;
+        }
+        
+         #posts {
+            grid-column:1 / span 3;
+            grid-row:2;
+        }
+        
+         #login, #sign-up, #menu {
+            grid-row:3;
+        }
+        
+         #login {
+            grid-column:1;
+            grid-row:;
+        }
+        
+         #menu {
+            grid-column:1/ span 3;
+            grid-row:4;
+        }
+        
+}
