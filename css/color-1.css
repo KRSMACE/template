@@ -1,0 +1,60 @@
+/*background-color:#44B3C2;
+background-color:#F1A94E;
+background-color:#E45641;
+background-color:#7B8D8E;
+background-color:#F2EDD8;
+
+
+
+color scheme*/
+
+:root {
+	--main-color: #E45641; /* dark green */
+	--accent-color: #7B8D8E; /* pink */
+    --text-color:white;
+}
+    
+#title{
+    color: var(--main-color);
+    text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+#login input, #sign-up input{
+    background:var(--main-color);
+    color: var(--text-color);
+        padding:0.25em;
+        
+}
+
+#menu a{
+    color:var(accent-color);
+    transition: color 300ms ease-in;
+}
+#menu a:hover{
+    color: var(--main-color);
+        
+}
+#write-post{
+    border: 1px solid var(--main-color);
+}
+#write-post::placeholder {
+    color:var(--main-color);
+}
+#submit-post{
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+.post-text{
+
+}
+
+.post .author{
+    color: var(--main-color);
+}
+
+.post .date{
+
+}
+    
+    

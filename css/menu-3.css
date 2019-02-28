@@ -1,11 +1,13 @@
 /* menu flex box */
 #menu-list {
-	padding: 0;
-	list-style: none;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+	padding: 19px;
+	list-style: square;
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
-    flex-wrap: no-wrap;
+    margin-top: 1em;
+    
     
     
     
@@ -16,11 +18,9 @@
 #menu-list li   {
 	margin-left: 1em;
     color: #F1A94E;
+    
 
 }
 
-#menu-list li a  {
-    color: #F1A94E;
 
-}
 
