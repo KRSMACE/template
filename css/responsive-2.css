@@ -9,7 +9,7 @@
         
     }
     
-    #title, #login, #sign-up, #menu, #post, #posts{
+    #title, #login, #sign-up, #menu, #post, #posts, #footer{
         grid-column:1;
     }
     
@@ -36,6 +36,37 @@
      #posts{
        grid-row:6; 
     }
+    
+    #footer{
+        
+        grid-row:9;
+    }
+    
+    #menu-list {
+	padding: 0;
+	list-style: none;
+	display: flex;
+    flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+    flex-wrap: no-wrap;
+    
+    
+    
+	
+}
+
+
+#menu-list li   {
+/*	margin-left:;*/
+    color: #F1A94E;
+
+}
+
+#menu-list li a  {
+    color: #F1A94E;
+
+}
 }
 
 /*Tablet*/
@@ -43,31 +74,63 @@
     (max-width: 800px){
         #container{
             width: 100%;
-            background-color: crimson
+            background-color: beige;
+        }
+        
+        #title{
+            grid-column: 1;
+            grid-row:1; 
         }
         
         #post {
-            grid-column:3/ span 1;
-            grid-row:1;
+            grid-column:1/ span 1;
+            grid-row:3;
         }
         
          #posts {
             grid-column:1 / span 3;
-            grid-row:2;
-        }
-        
-         #login, #sign-up, #menu {
-            grid-row:3;
-        }
-        
-         #login {
-            grid-column:1;
-            grid-row:;
-        }
-        
-         #menu {
-            grid-column:1/ span 3;
             grid-row:4;
         }
         
+          #sign-up{
+            grid-column:3;  
+            grid-row:1;
+        }
+        
+         #login {
+            grid-column:2;
+            grid-row:1;
+        }
+        
+         #menu {
+            grid-column:3;
+            grid-row:3;
+        
+             
+             
+        
+}
+        #menu-list {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+	padding: 19px;
+	list-style: square;
+	display: flex;
+	align-items: flex-end;
+    margin-top: 1em;
+    
+    
+    
+    
+	
+}
+
+
+#menu-list li   {
+	margin-left: 1em;
+    color: #F1A94E;
+    
+
+}
+
 }
