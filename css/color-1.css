@@ -9,7 +9,7 @@ background-color:#F2EDD8;
 color scheme*/
 
 :root {
-	--main-color: #E45641; /* dark green */
+	--main-color: pink; /* dark green */
 	--accent-color: #7B8D8E; /* pink */
     --text-color:white;
 }
