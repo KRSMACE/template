@@ -1,0 +1,57 @@
+/* 
+	color scheme 4
+	complementary color scheme
+*/
+:root {
+	--main-hue:22;
+	--main-color: hsl(var(--main-hue), 100%, 77%);
+		
+	--accent-one-hue: calc(var(--main-hue) - 180);
+	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
+		
+	--accent-two: hsl(var(--main-hue), 25%, 75%);
+}
+
+#title {
+	color: var(--main-color);
+}
+	
+.post {
+	color: var(--main-color);
+	border: 4px solid var(--accent-two);
+	padding: 1em;
+}
+	
+.author, .date {
+	color: var(--accent-one);
+}
+
+#menu a{
+    color:var(accent-color);
+    transition: color 300ms ease-in;
+}
+#menu a:hover{
+    color: var(--main-color);
+        
+}
+#submit-post{
+    color: var(--accent-one);
+     background: var(--main-color);
+}
+
+#submit-login{
+    color: var(--main-color);
+}
+#submit-sign-up{
+    color: var(--main-color);
+}
+
+#login input, #sign-up input{
+    background:var(--main-color);
+    color: var(--text-color);
+        padding:0.25em;
+
+/*
+#sign-up-username, #sign-up-email, #sign-up-password{
+    color: var(--accent-two);
+}*/

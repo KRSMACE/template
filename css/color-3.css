@@ -1,15 +1,16 @@
 /* 
-	color scheme 2
-	triadic color scheme
+	color scheme 3
+	analagous color scheme
 */
 :root {
-	--main-hue: 310; /* blue */
+	--main-hue: 310;
+	--offset: 50;
 	--main-color: hsl(var(--main-hue), 50%, 50%);
 		
-	--accent-one-hue: calc(var(--main-hue) - 120);
+	--accent-one-hue: calc(var(--main-hue) - var(--offset));
 	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
 		
-	--accent-two-hue: calc(var(--main-hue) + 120);
+	--accent-two-hue: calc(var(--main-hue) + var(--offset));
 	--accent-two: hsl(var(--accent-two-hue), 50%, 50%);
 }
 
