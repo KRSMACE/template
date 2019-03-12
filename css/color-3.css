@@ -3,8 +3,8 @@
 	analagous color scheme
 */
 :root {
-	--main-hue: 310;
-	--offset: 50;
+	--main-hue: 201;
+	--offset: 48;
 	--main-color: hsl(var(--main-hue), 50%, 50%);
 		
 	--accent-one-hue: calc(var(--main-hue) - var(--offset));
@@ -20,10 +20,35 @@
 	
 .post {
 	color: var(--main-color);
-	border: 2px solid var(--accent-two);
+	border: 4px solid var(--accent-two);
 	padding: 1em;
 }
 	
 .author, .date {
 	color: var(--accent-one);
 }
+
+#menu a{
+    color:var(accent-color);
+    transition: color 300ms ease-in;
+}
+#menu a:hover{
+    color: var(--main-color);
+        
+}
+#submit-post{
+    color: var(--accent-one);
+     background: var(--main-color);
+}
+
+#submit-login{
+    color: var(--main-color);
+}
+#submit-sign-up{
+    color: var(--main-color);
+}
+
+#login input, #sign-up input{
+    background:var(--main-color);
+    color: var(--text-color);
+        padding:0.25em;
