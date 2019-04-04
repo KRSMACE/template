@@ -6,18 +6,16 @@ const signupPassword = document.getElementById('sign-up-password');
 
 function updateUser(credential) {
 	const userInfo = {
-		displayName: signupUsername.value	
+		displayName: signupUsername.value
 	};
 	credential.user.updateProfile(userInfo);
 	authState(credential.user);
-    
-    /* add to database */
+	
+	/* add user to database */
 	const db = firebase.database();
 	const ref = db.ref('users').child(credential.user.uid);
-	ref.update(userInfo);
+	ref.set(userInfo);
 }
-
-
 
 function createUser() {
 	const email = signupEmail.value;
@@ -47,11 +45,12 @@ loginButton.onclick = function() {
 /* auth state */
 const displayName = document.getElementById('display-name');
 const profileLink = document.getElementById('profile-link');
+
 function authState(user) {
 	if (user) {
 		document.body.classList.add('logged-in');
 		displayName.textContent = 'Hello, ' + user.displayName;
-        document.getElementById('profile-link').href = "/user.html?=" + user.uid;
+		profileLink.href = '/user.html?uid=' + user.uid;
 	} else {
 		document.body.classList.remove('logged-in');	
 	}
